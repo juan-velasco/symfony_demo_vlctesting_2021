@@ -65,6 +65,7 @@ class BlogController extends AbstractController
 
     /**
      * @Route("/posts/{slug}", methods="GET", name="blog_post")
+     * @Cache(smaxage="10")
      *
      * NOTE: The $post controller argument is automatically injected by Symfony
      * after performing a database query looking for a Post with the 'slug'
