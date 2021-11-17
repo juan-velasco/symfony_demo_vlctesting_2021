@@ -7,7 +7,7 @@ controllers:
     defaults:
         _locale: '%locale%'
 
-optimized_controller:
-    resource: '../../src/Controller/OptimizedAPIController.php'
-    type: annotation
-    prefix: /api-optimized
+#optimized_controller:
+#    resource: '../../src/Controller/OptimizedAPIController.php'
+#    type: annotation
+#    prefix: /api-optimized

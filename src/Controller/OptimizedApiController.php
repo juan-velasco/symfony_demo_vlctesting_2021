@@ -12,7 +12,7 @@ use Symfony\Component\Validator\Constraints\Json;
 class OptimizedApiController extends AbstractController
 {
     /**
-     * @Route("/people/", name="optimized_api_people_index", methods="GET")
+     * @Route("/optimized-api/people/", name="optimized_api_people_index", methods="GET")
      */
     public function index(): Response
     {
@@ -28,7 +28,7 @@ class OptimizedApiController extends AbstractController
     }
 
     /**
-     * @Route("/people/", name="optimized_api_people_new", methods="POST")
+     * @Route("/optimized-api/people/", name="optimized_api_people_new", methods="POST")
      */
     public function new(Request $request): Response
     {
@@ -60,7 +60,7 @@ class OptimizedApiController extends AbstractController
     }
 
     /**
-     * @Route("/people/{id}/", name="optimized_api_people_get", methods="GET")
+     * @Route("/optimized-api/people/{id}/", name="optimized_api_people_get", methods="GET")
      */
     public function getOne(int $id): Response
     {
@@ -77,7 +77,7 @@ class OptimizedApiController extends AbstractController
     }
 
     /**
-     * @Route("/people/{id}/update", name="optimized_api_people_update", methods="PUT")
+     * @Route("/optimized-api/people/{id}/update", name="optimized_api_people_update", methods="PUT")
      */
     public function update(Request $request, int $id): Response
     {
@@ -109,7 +109,7 @@ class OptimizedApiController extends AbstractController
     }
 
     /**
-     * @Route("/people/{id}/delete", name="optimized_api_people_get", methods="DELETE")
+     * @Route("/optimized-api/people/{id}/delete", name="optimized_api_people_get", methods="DELETE")
      */
     public function delete(int $id): Response
     {
