@@ -43,7 +43,7 @@ security:
                 login_path: security_login
                 # Secure the login form against CSRF
                 # Reference: https://symfony.com/doc/current/security/csrf.html
-                enable_csrf: true
+                enable_csrf: false
                 # The page users are redirect to when there is no previous page stored in the
                 # session (for example when the users access directly to the login page).
                 default_target_path: blog_index
