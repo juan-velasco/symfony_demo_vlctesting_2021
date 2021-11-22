@@ -157,9 +157,9 @@ class BlogController extends AbstractController
      */
     public function delete(Request $request, Post $post): Response
     {
-//        if (!$this->isCsrfTokenValid('delete', $request->request->get('token'))) {
-//            return $this->redirectToRoute('admin_post_index');
-//        }
+        if (!$this->isCsrfTokenValid('delete', $request->request->get('token'))) {
+            return $this->redirectToRoute('admin_post_index');
+        }
 
         // Delete the tags associated with this blog post. This is done automatically
         // by Doctrine, except for SQLite (the database used in this application)
