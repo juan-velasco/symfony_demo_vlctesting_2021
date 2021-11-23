@@ -56,7 +56,7 @@ class OptimizedApiController extends AbstractController
 
         $data['id'] = $conn->lastInsertId();
 
-        return new JsonResponse($data, JsonResponse::HTTP_OK, [], false);
+        return new JsonResponse($data, JsonResponse::HTTP_CREATED, [], false);
     }
 
     /**
