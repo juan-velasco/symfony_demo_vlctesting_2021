@@ -109,7 +109,7 @@ class OptimizedApiController extends AbstractController
     }
 
     /**
-     * @Route("/optimized-api/people/{id}/delete", name="optimized_api_people_get", methods="DELETE")
+     * @Route("/optimized-api/people/{id}/delete", name="optimized_api_people_delete", methods="DELETE")
      */
     public function delete(int $id): Response
     {
